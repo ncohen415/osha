@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+//FAQ DROPDOWN ANIMATION
 
 var acc = document.getElementsByClassName("accordion");
 var i;

@@ -11,6 +11,7 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 
 $(document).ready(function(){
 
+//FAQ DROPDOWN ANIMATION
 
 var acc = document.getElementsByClassName("accordion");
 var i;

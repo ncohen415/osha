@@ -711,7 +711,7 @@ body {
   background-size: cover; }
 
 .main {
-  width: 1000px;
+  max-width: 1000px;
   height: 100%;
   margin: 0 auto; }
 
@@ -789,14 +789,8 @@ body {
           border: none;
           outline: none;
           transition: 0.4s; }
-          .faq-container .faq-wrapper .faq-content-wrapper .faq-questions-wrap .accordion .active, .faq-container .faq-wrapper .faq-content-wrapper .faq-questions-wrap .accordion .accordion:hover {
+          .faq-container .faq-wrapper .faq-content-wrapper .faq-questions-wrap .accordion.active, .faq-container .faq-wrapper .faq-content-wrapper .faq-questions-wrap .accordion:hover {
             background-color: #ccc; }
-        .faq-container .faq-wrapper .faq-content-wrapper .faq-questions-wrap .panel {
-          padding: 0 18px;
-          background-color: white;
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.2s ease-out; }
         .faq-container .faq-wrapper .faq-content-wrapper .faq-questions-wrap .accordion:after {
           content: '\02795';
           /* Unicode character for "plus" sign (+) */
@@ -807,5 +801,11 @@ body {
         .faq-container .faq-wrapper .faq-content-wrapper .faq-questions-wrap .active:after {
           content: "\2796";
           /* Unicode character for "minus" sign (-) */ }
+        .faq-container .faq-wrapper .faq-content-wrapper .faq-questions-wrap .panel {
+          padding: 0 18px;
+          background-color: white;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out; }
 
 /*# sourceMappingURL=styles.css.map */
