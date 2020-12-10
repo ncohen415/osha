@@ -1,6 +1,6 @@
 <?php
 /*
-    Template Name: Intro to Osha
+    Template Name: Electrical
  */
 
 get_header(); ?>
@@ -10,7 +10,7 @@ get_header(); ?>
     <!-- BODY
     ========================================================================================================-->
     <div class="title">
-            <h1>Intro to OSHA</h1>
+            <h1>Electrical</h1>
         </div>
     <div class="section-container">
 
@@ -53,7 +53,7 @@ get_header(); ?>
           <div class="discussion-content">
             <?php 
             
-              echo do_shortcode('[bbp-single-forum id=39]')
+              echo do_shortcode('[bbp-single-forum id=97]')
 
             ?>
           </div>
@@ -62,3 +62,4 @@ get_header(); ?>
 
     <!--main-->
   </div>
+
