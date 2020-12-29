@@ -49,7 +49,33 @@
 ?>
 </head>
 <body <?php body_class(); ?>>
-<div class="site-container">
+  <div class="site-container">
+
+      <div class="header-container">
+        <div class="header-wrapper">
+            <div class="brand">
+                <a href="localhost:8888/home">
+                    <img src="<?php bloginfo('stylesheet_directory') ?>/assets/img/bsafetyconsciouslogo.png" alt="">
+                </a>
+            </div>
+
+
+
+            <div class="nav-wrapper">
+            <?php 
+              
+              wp_nav_menu(array(
+
+                'theme_location'    => 'primary',
+                'container'         => 'div',
+                'menu_class'   => 'nav',
+              )
+              )
+
+            ?>
+            </div>
+        </div>
+    </div>
 
 
 	<div class="site-content">

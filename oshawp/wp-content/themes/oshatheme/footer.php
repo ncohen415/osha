@@ -1,6 +1,6 @@
   </div>
   
-  <footer class="site-footer">
+  <!-- <footer class="site-footer">
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
         <nav class="large-auto cell footer-nav">
@@ -20,7 +20,7 @@
         <div class="large-shrink cell footer-credit">Copyright &copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?></div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.21.0/feather.min.js"></script>

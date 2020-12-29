@@ -52,9 +52,7 @@ get_header(); ?>
       <div class="section-discussion-wrapper">
           <div class="discussion-content">
             <?php 
-            
               echo do_shortcode('[bbp-single-forum id=90]')
-
             ?>
           </div>
       </div>

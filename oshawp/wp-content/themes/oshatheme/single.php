@@ -30,7 +30,6 @@ get_header();
     <div class="posts-sidebar medium-3 cell">
       <?php get_sidebar(); ?>
     </div>	
-
 	</div>
 </main>
 
