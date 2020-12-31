@@ -71,6 +71,7 @@ $xl: "min-width: 1800px";
         transition: ease .2s;
         &:hover{
           color: #343434;
+          text-decoration: none;
         }
       }
     }
@@ -109,6 +110,58 @@ $xl: "min-width: 1800px";
       text-align: right;
       p{
         color: white;
+      }
+    }
+
+  }
+  .login{
+    display: flex;
+    flex: 1;
+    margin: 15px 10% 0 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    p{
+      font-size: 24px;
+      font-weight: bold;
+      color: #003F87;
+      padding: 0 50px 0 0;
+    }
+    button{
+      display: inline-block;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      padding: 1rem 2rem;
+      margin: 0;
+      text-decoration: none;
+      background: #7ec0ee;
+      color: #ffffff;
+      font-family: sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      transition: ease .2s;
+      &:hover{
+        background: gold;
+        color: #003F87;
+      }
+
+    }
+    form{
+      font-weight: bold;
+      color: #003F87;
+      width: 50%;
+      .bbp-remember-me{
+        display: flex;
+        flex: 1;
+        align-items: baseline;
+        input{
+          padding: 0 1% 0 0;
+        }
+        label{
+          flex: 1;
+          padding: 0 0 0 15px;
+        }
       }
     }
   }
@@ -189,7 +242,10 @@ $xl: "min-width: 1800px";
                 background: #7ec0ee;
                 color: #ffffff;
               }
-
+              a{
+                text-decoration: none;
+                color: #003F87;
+              }
           }
         }
       }
@@ -201,16 +257,16 @@ $xl: "min-width: 1800px";
 //INFORMATION SECTION PAGES
 .title {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 15px 10% 15px 10%;
 }
-
 .section-container {
   display: flex;
+  margin: 0 10% 0 10%;
   .section-info-wrapper {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 0 20px 0 40px;
     .info-content {
       height: 100%;
       width: 100%;
@@ -229,11 +285,34 @@ $xl: "min-width: 1800px";
     .discussion-content {
       height: 100%;
       width: 100%;
+      legend{
+        font-size: 16px;
+      }
+    }
+    button{
+      display: inline-block;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      padding: 1rem 2rem;
+      margin: 0;
+      text-decoration: none;
+      background: #7ec0ee;
+      color: #ffffff;
+      font-family: sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      transition: ease .2s;
+      &:hover{
+        background: gold;
+        color: #003F87;
+      }
     }
   }
 }
 
-//DISCUSSION PAGE
+//FORUMS PAGE
 
 .discussion-container{
   width: 100%;
@@ -261,30 +340,13 @@ $xl: "min-width: 1800px";
     width: 100%;
     height: 100%;
     margin: 25px 0 25px 0;
-    .bbpress-wrapper{
-      margin: 0 10% 0 10%;
-      .bbp-breadcrumb{
-        display: none;
-      }
-      .bbp-search-form{
-        display: none;
-      }
-      .bbp-forums{
-        .bbp-header, .bbp-footer{
-          background: #7ec0ee !important;
-        }
-        .bbp-body{
-          ul{
-            li{
-              a{
-                text-decoration: none;
-                color: #003F87;
-                font-weight: bold;
-                transition: ease .2s !important;
-                &:hover{
-                  color:gold;
-                }
-              }
+    ul{
+      li{
+        ul{
+          li{
+            p{
+              display: flex;
+              justify-content: center;
             }
           }
         }
@@ -298,7 +360,7 @@ $xl: "min-width: 1800px";
   margin: 0 10% 0 10%;
   h1{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 15px 0 15px 0;
   }
   .entry-content{
@@ -342,13 +404,14 @@ $xl: "min-width: 1800px";
 
 //SINGLE TOPIC PAGE
 .page-container{
-  margin: 0 10% 0 10%;
-  h1{
+  .entry-title{
     display: flex;
     justify-content: flex-start;
-    margin: 15px 0 15px 0;
+    margin: 15px 10% 15px 10%;
   }
   .entry-content{
+    .bbpress-wrapper{
+      margin: 0 10% 0 10%;
     a{
       text-decoration: none;
       color: #003F87;
@@ -391,5 +454,51 @@ $xl: "min-width: 1800px";
   .bbp-author-name{
     display: flex !important;
   }
+}
+}
 
+//CONTACT PAGE
+.contact-container{
+  margin: 15px 10% 15px 10%;
+  justify-content: center;
+  display: flex;
+  .contact-wrapper{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+  h3{
+    font-size: 2.5rem;
+  }
+  form{
+    color: #003F87;
+  .nf-before-form-content{
+    margin: 1.5% 0 1.5% 0;
+    color: black !important;
+  }
+  .nf-form-content{
+    padding: 0;
+    margin: 1.5% 0 1.5% 0;
+  }
+  #nf-field-4{
+    display: inline-block;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      padding: 1rem 2rem;
+      margin: 0;
+      text-decoration: none;
+      background: #7ec0ee;
+      color: #ffffff;
+      font-family: sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      transition: ease .2s;
+      &:hover{
+        background: gold;
+        color: #003F87;
+      }
+  }
+}
+}
 }
